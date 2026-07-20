@@ -1,0 +1,14 @@
+Feature/Module,Test Case ID,Test Case Description,Precondition,Test Steps,Expected Resut,Actual Result,Status,Test Data
+,,,,,,,,
+Login Page,,,,,,,,
+,,,,,,,,
+Sign-In,TC_01,Verify login with valid Email and valid Password.,User is registered and Login page is open.,"1. Open the login page.
+2. Enter testuser@example.com in the Email field.
+3. Enter Password1234 in the Password field.
+4. Click the Login button.",User logs in successfully and is redirected to the Dashboard.,Leave blank during execution,Not Executed,"Email: testuser@example.com
+Password: Pass123 (7 characters)"
+,TC_02,Verify login with a valid Email and an invalid short Password (7 characters).,Login page is open.,"1. Open the login page.
+2. Enter testuser@example.com in the Email field.
+3. Enter Pass12345 (7 characters) in the Password field.
+4. Click the Login button.",System should not allow login and should display a validation error because the password must be at least 8 characters long.,Leave blank during execution,Not Executed,"Email: testuser@example.com
+Password: Pass123 (7 characters)"
